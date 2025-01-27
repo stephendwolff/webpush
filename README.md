@@ -98,6 +98,9 @@ class AccountApproved extends Notification
 
 You can find the available options [here](https://github.com/web-push-libs/web-push-php#notifications-and-default-options).
 
+This appears to use GCM once installed, and the VAPID work is only to generate a key, not actually to use VAPID (and thus work with Apple).
+Adding a comment here to test that i have used this fork in my PHP project.
+
 ### Save/Update Subscriptions
 
 To save or update a subscription use the `updatePushSubscription($endpoint, $key = null, $token = null, $contentEncoding = null)` method on your user:
